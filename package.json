@@ -1,0 +1,24 @@
+{
+  "name": "disclocks",
+  "version": "1.0.0",
+  "description": "Clocks for Discord.",
+  "main": "disclocks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karashiiro/DisClocks.git"
+  },
+  "author": "karashiiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karashiiro/DisClocks/issues"
+  },
+  "homepage": "https://github.com/karashiiro/DisClocks#readme",
+  "dependencies": {
+    "cron": "^1.7.2",
+    "discord.js": "^11.5.1",
+    "moment": "^2.24.0"
+  }
+}
