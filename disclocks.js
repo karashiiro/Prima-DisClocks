@@ -27,6 +27,6 @@ for (let i = 0; i < client.events.length; i++) {
 client.login(token)
 .then(() => {
     client.guild = client.guilds.first();
-    client.rssManager = new ClockManager(client, "./clocks");
+    client.clockManager = new ClockManager(client, "./clocks");
 })
 .catch(console.error);
