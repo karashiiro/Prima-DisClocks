@@ -62,3 +62,4 @@ typings/
 
 # Application instance files
 clocks/
+*.json
