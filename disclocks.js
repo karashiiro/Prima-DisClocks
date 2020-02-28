@@ -5,6 +5,7 @@ const onMessage            = require("./lib/events/onMessage");
 const onReady              = require("./lib/events/onReady");
 
 const ClockManager         = require("./lib/subsystem/ClockManager");
+const UptimeMessageService = require("./lib/subsystem/UptimeMessageService");
 
 const ensureConfig         = require("./lib/util/ensureConfig");
 
@@ -28,5 +29,6 @@ client.login(token)
 .then(() => {
     client.guild = client.guilds.first();
     client.clockManager = new ClockManager(client, "./clocks");
+    client.uptimeMessageService = new UptimeMessageService();
 })
 .catch(console.error);
