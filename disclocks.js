@@ -10,7 +10,7 @@ const UptimeMessageService = require("./lib/subsystem/UptimeMessageService");
 const ensureConfig         = require("./lib/util/ensureConfig");
 
 // Config load/creation
-const { token } = ensureConfig("./config.json");
+ensureConfig("./config.json");
 
 // Bot client initialization
 const client = new Discord.Client();
@@ -25,7 +25,7 @@ for (let i = 0; i < client.events.length; i++) {
 }
 
 // Log in and set up subsystems
-client.login(token)
+client.login(process.env.DISCORD_BOT_TOKEN)
 .then(() => {
     client.guild = client.guilds.first();
     client.clockManager = new ClockManager(client, "./clocks");
