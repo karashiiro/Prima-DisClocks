@@ -22,6 +22,6 @@
     "discord.js": "^11.5.1",
     "lodash.compact": "^3.0.1",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.27"
+    "moment-timezone": "^0.5.35"
   }
 }
